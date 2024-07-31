@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Lesser Known</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    
+
+
 </head>
+
 <body>
     <div class="navbar">
         <div class="navbar-title">Lesser Known</div>
@@ -20,13 +22,31 @@
         <input type="text" class="search-input" placeholder="Add songs here">
         <!-- <img src="search-icon.png" alt="Search" class="search-icon"> -->
         <p class="search-info">Narrow your search by country or years released</p>
-        <select class="dropdown">
-            <option value="country">Country</option>
-        </select>
-        <select class="dropdown">
-            <option value="years">Years</option>
-        </select>
-        <div id="search-results"></div>
+        <div class="dropdown-container">
+            <select class="dropdown">
+                <option value="">Country</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Japan">Japan</option>
+            </select>
+            <select class="dropdown">
+                <option value="years">Years</option>
+                <option value="1960-69">1960-69</option>
+                <option value="1970-79">1970-79</option>
+                <option value="1980-89">1980-89</option>
+                <option value="1990-99">1990-99</option>
+                <option value="2000-2009">2000-2009</option>
+                <option value="2010-2019">2010-2019</option>
+                <option value="2020-Present">2020-Present</option>
+            </select>
+            <button>Generate List</button>
+        </div>
+        <div id="search-results">
+            <p></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
